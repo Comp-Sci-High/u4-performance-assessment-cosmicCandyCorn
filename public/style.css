@@ -1,0 +1,111 @@
+/* Import sharp and classy font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #FFDDC1, #FFABAB, #FFC3A0, #FF677D);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #4A1A0E;
+    transition: color 0.3s ease;
+}
+
+/* Gradient background animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navbar Styling */
+header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A1A0E;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #E63946;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4A1A0E;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #E63946;
+}
+
+/* Welcome Section */
+.welcome h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.welcome p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect on Text */
+.welcome h1:hover,
+.welcome p:hover {
+    color: #E63946;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #FF6F61;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background: #D63E2F;
+    transform: scale(1.05);
+}
